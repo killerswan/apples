@@ -31,6 +31,7 @@ nosetests.xml
 /Output/
 
 /pcat1
+/andes1
 
 # git ls-files --others --exclude-from=.git/info/exclude
 # git ls-files --others --exclude-from=.gitignore
