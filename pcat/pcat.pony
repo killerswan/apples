@@ -4,7 +4,7 @@ actor Main
   new create(env: Env) =>
 
     try
-        let ff = File(FilePath(env.root, "temp.txt"))
+        let ff = File(FilePath(env.root as AmbientAuth, "temp.txt"))
 
         let lines = ff.lines()
 

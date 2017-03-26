@@ -29,10 +29,10 @@ actor Main
     // Q1 isn't this built in?
     // Q2 what about generics, ugh!?
     // Q3 isn't there a fori control structure? A: pairs() and keys() are neato
-    fun slice(xxs: List[I8], start: U64, stop: U64): List[I8] => 
+    fun slice(xxs: List[I8], start: USize, stop: USize): List[I8] => 
         var collect = List[I8]()
         try
-            var ii: U64 = 0
+            var ii: USize = 0
             while ((ii < xxs.size()) and (ii < stop)) do
                 if ((start <= ii) and (ii < stop)) then
                     let xx = xxs(ii) // Q4 can we prove this will be OK?
@@ -78,7 +78,7 @@ actor Main
         show(terrain)
         
 
-        var ii : U64 = 0
+        var ii : USize = 0
         while ii < terrain.size() do 
 
             let peak_behind = peak_in_slice(slice(terrain, 0,    ii))
